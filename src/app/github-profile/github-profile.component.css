@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     background: #EFF3F8;
+    box-shadow: 2px 2px 3px 0px gray;
 }
 .profile_container > .profile{
     flex: 0.4;

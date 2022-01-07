@@ -1,14 +1,14 @@
 <div class="data">
     <div class="info">
         <span class="badge bg-primary">{{githubProfile.followers}} Followers</span>
-        <span class="badge bg-success">{{githubProfile.gists_url}} Gists</span>
-        <span class="badge bg-info">{{githubProfile.repos_url}} Repos</span>
+        <span class="badge bg-success">{{githubProfile.public_gists}} Gists</span>
+        <span class="badge bg-info">{{githubProfile.public_repos}} Repositories</span>
         <span class="badge bg-secondary">{{githubProfile.following}} Following</span>
     </div>
     <div>
         <ul class="list-group mt-2 bg-secondary">
             <li class="list-group-item list-group-item-secondary list-group-item-action">Company: {{githubProfile.company}}</li>
-            <li class="list-group-item list-group-item-success list-group-item-action">Website: {{githubProfile.blog}}</li>
+            <li class="list-group-item list-group-item-success list-group-item-action">Website: <a href={{githubProfile.blog}} target="_blank">{{githubProfile.blog}}</a></li>
             <li class="list-group-item list-group-item-primary list-group-item-action">Location: {{githubProfile.location}}</li>
             <li class="list-group-item list-group-item-success list-group-item-action">Email: {{githubProfile.email}}</li>
         </ul>

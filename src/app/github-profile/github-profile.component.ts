@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class GithubProfileComponent implements OnInit {
   @Input() githubProfile:any;
+  @Input() githubRepos:any;
 
   constructor() { }
 
