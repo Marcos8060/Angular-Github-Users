@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -5,5 +6,9 @@ import { Injectable } from '@angular/core';
 })
 export class GithubService {
 
-  constructor() { }
+  constructor(httpClient: HttpClientModule) { }
+
+  // get github profile
+
+  // get github repos
 }
