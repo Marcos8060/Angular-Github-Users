@@ -1,5 +1,6 @@
 .profile_container{
     display: flex;
+    align-items: center;
     background: #EFF3F8;
 }
 .profile_container > .profile{
