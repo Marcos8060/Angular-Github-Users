@@ -3,8 +3,8 @@
         <div class="card col-md-6 input">
             <div class="card-header">
                 <form>
-                    <input class="form-control" type="search" placeholder="Enter username...">
-                    <input type="submit" class="btn btn-primary">
+                    <input [(ngModel)]="userInput" name="userInput" class="form-control" type="search" placeholder="Enter username...">
+                    <input type="submit" value="search" class="btn btn-primary">
                  </form>
             </div>
         </div>
