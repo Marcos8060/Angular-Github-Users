@@ -13,9 +13,19 @@ export class GithubComponent implements OnInit {
 
   constructor(private githbService: GithubService) { }
 
+  searchUser(){
+    // get user profile
+    this.githbService.getProfile(this.userInput).subscribe((data)=>{
+      this.githubProfile = data;
+    })
+
+    // get user Repos
+    this.githbService.getRepos(this.userInput).subscribe((data)=>{
+      this.githubRepos = data;
+    })
+  }
+  
   ngOnInit(): void {
   }
-
-  
 
 }
