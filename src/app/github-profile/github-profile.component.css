@@ -1,0 +1,10 @@
+.profile_container{
+    display: flex;
+    background: #EFF3F8;
+}
+.profile_container > .profile{
+    flex: 0.4;
+}
+.profile_container > .data{
+    flex: 0.6;
+}
