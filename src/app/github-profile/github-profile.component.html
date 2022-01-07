@@ -1,9 +1,9 @@
     <div class="profile_container">
         <div class="profile">
-            <app-github-profile-profile></app-github-profile-profile>
+            <app-github-profile-profile [githubProfile]="githubProfile"></app-github-profile-profile>
         </div>
         <div class="data">
-            <app-github-profile-data></app-github-profile-data>
+            <app-github-profile-data [githubProfile]="githubProfile"></app-github-profile-data>
         </div>
     </div>
     <h3 class="mt-2">Latest Repositories</h3>
