@@ -1,13 +1,15 @@
     <div class="profile_container">
-        <div class="profile">
+        <div *ngIf="githubProfile" class="profile">
             <app-github-profile-profile [githubProfile]="githubProfile"></app-github-profile-profile>
         </div>
-        <div class="data">
+        <div *ngIf="githubProfile" class="data">
             <app-github-profile-data [githubProfile]="githubProfile"></app-github-profile-data>
         </div>
     </div>
-    <h3 class="mt-2">Latest Repositories</h3>
-    <app-github-repos [githubRepos]="githubRepos"></app-github-repos>
+    <div *ngIf="githubRepos">
+      <h3 class="mt-2">Latest Repositories</h3>
+      <app-github-repos [githubRepos]="githubRepos"></app-github-repos>
+    </div>
 
 
 
