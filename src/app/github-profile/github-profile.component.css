@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 .profile_container{
     display: flex;
     align-items: center;
@@ -8,4 +10,7 @@
 }
 .profile_container > .data{
     flex: 0.6;
+}
+h3{
+    font-family: 'Poppins', sans-serif;
 }
