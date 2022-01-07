@@ -1,3 +1,10 @@
-.card > div > input {
-    width: 50%;
+.card > form > div > input {
+    width: 500px;
+}
+.form{
+    display: flex;
+    align-items: center;
+}
+.btn{
+    margin-left: 20px;
 }
