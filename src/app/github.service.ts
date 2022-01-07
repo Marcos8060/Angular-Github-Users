@@ -1,5 +1,6 @@
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 import { client_id, client_secret } from './github/clientsecret';
 
 @Injectable({
@@ -7,12 +8,16 @@ import { client_id, client_secret } from './github/clientsecret';
 })
 export class GithubService {
 
-  constructor(httpClient: HttpClientModule) { }
+  constructor(private httpClient: HttpClient) { }
 
   // get github profile
-  getProfile(userInput:string){
+  getProfile(userInput:string):Observable<any>{
     let profileURL = `https://api.github.com/users/${userInput}?client_id=${client_id}&client_secret=${client_secret}`;
-    
+    return this.httpClient.get<any>(profileURL);
   }
   // get github repos
+  getRepos(userInput:string):Observable<any>{
+    let profileURL = `https://api.github.com/users/${userInput}/repos?client_id=${client_id}&client_secret=${client_secret}`;
+    return this.httpClient.get<any>(profileURL)
+  }
 }
