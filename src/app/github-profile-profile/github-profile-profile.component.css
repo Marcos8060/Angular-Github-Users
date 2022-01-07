@@ -1,5 +1,21 @@
-.profile > img{
-    border-radius: 20%;
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.profile{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+.profile > div > img{
+    border-radius: 50%;
     height: 100px;
     width: 100px;
+}
+h4{
+    font-weight: 700;
+}
+p{
+    color: gray;
 }
