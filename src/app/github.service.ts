@@ -18,6 +18,6 @@ export class GithubService {
   // get github repos
   getRepos(userInput:string):Observable<any>{
     let profileURL = `https://api.github.com/users/${userInput}/repos?client_id=${client_id}&client_secret=${client_secret}`;
-    return this.httpClient.get<any>(profileURL)
+    return this.httpClient.get<any>(profileURL);
   }
 }
